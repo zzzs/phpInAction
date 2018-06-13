@@ -17,3 +17,5 @@
 * 数组元素加引号$data['a']
 * 循环foreach好于for while
 * NoSQL缓存
+* memcached要存储的值，字符串和数值直接存储，其他类型序列化后存储。
+* memcached写入缓存的数据的失效时间:永不过期 or <= 30天
