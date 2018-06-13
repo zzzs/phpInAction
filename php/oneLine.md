@@ -17,5 +17,10 @@
 * 数组元素加引号$data['a']
 * 循环foreach好于for while
 * NoSQL缓存
-* memcached要存储的值，字符串和数值直接存储，其他类型序列化后存储。
+* memcached要存储的值，字符串和数值直接存储，其他类型序列化后存储
 * memcached写入缓存的数据的失效时间:永不过期 or <= 30天
+* serialize() 与 json_encode()
+    * serialize()在编码后大概是json_encode()的两倍
+    * serialize()的速度在【大数据量】的情况下比json_encode()差了快一个数量级
+    * serialize()可以处理对象
+    * serialize()常用于存储，json_encode()常用于传输
