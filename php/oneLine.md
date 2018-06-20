@@ -24,3 +24,5 @@
     * serialize()的速度在【大数据量】的情况下比json_encode()差了快一个数量级
     * serialize()可以处理对象
     * serialize()常用于存储，json_encode()常用于传输
+* 频繁更新操作导致update db频繁，可改为redis等内存缓存方案
+* 每个窗口并行发起请求，同时打开多个窗口的话请求爆炸，可改为localStorage本地缓存，多个窗口只会请求一次
